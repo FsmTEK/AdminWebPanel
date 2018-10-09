@@ -14,6 +14,7 @@
       <link rel="stylesheet" href="cssc/style.css">
 </head>
 <body>
+
   <body ng-controller="RegisterCtrl" ng-app="myApp">
 
  <div class="container">
@@ -23,7 +24,7 @@
             <h1>Sign up</h1>
            <div class="divider"></div>
          </div>
-           <form action="#" class="form-register" method="post" name="register" novalidate>
+           <form  class="form-register" method="post" name="register" novalidate>
 	            <div class="input-field col s6">
               <input id="first-name" type="text" class="validate" required>
               <label for="first-name">First Name</label>
