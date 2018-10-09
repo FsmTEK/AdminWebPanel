@@ -15,6 +15,47 @@ requıre_one ("s.php");
     <link rel="stylesheet" href="cssc/style.css">
 </head>
 <body>
+<?php
+require_once("baglanti.php")
+?>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<?php
+if ($_POST)
+{
+    $adi = $_POST["adi"];
+    $soyadi = $_POST["soyadi"];
+    $Eposta = $_POST["Eposta"];
+    $sifre = $_POST["sifre"];
+
+    if(empty($adi) || empty($soyadi)|| empty($Eposta)|| empty($sifre))
+    {
+        echo "Boş alan bırakmayınız!";
+
+    }else{
+        $ekle = $db->exec("insert into icerikler(adi,soyadi,Eposta,sifre) values('$adi','$soyadi','$Eposta','$sifre')");
+
+        if($ekle == true)
+        {
+            echo "Ekleme işlemi başarılı";
+
+        }else{
+            echo "Ekleme işlemi başarısız";
+        }
+    }
+
+}else{
+    ?>
+
+
 <body ng-controller="RegisterCtrl" ng-app="myApp">
 <div class="container">
     <div id="signup">
@@ -57,6 +98,7 @@ requıre_one ("s.php");
         </div>
     </div>
 </div>
+<?php }?>
 </body>
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js'></script>
