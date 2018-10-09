@@ -18,7 +18,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <header class="main-header">
-    <a href="../../index  .html" class="logo">
+    <a href="../../index.php" class="logo">
       <span class="logo-mini"><b>A</b>S</span>
       <span class="logo-lg"><b>Ana</b>SAYFA</span>
     </a>
@@ -128,7 +128,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.html"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
+            <li><a href="index.php"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -140,11 +140,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages\layout\uye.html"><i class="fa fa-circle-o"></i>Üyeler</a></li>
+            <li><a href="pages\layout\uye.php"><i class="fa fa-circle-o"></i>Üyeler</a></li>
           </ul>
         </li>
         <li>
-          <a href="../calendar.html">
+          <a href="../calendar.php">
             <i class="fa fa-calendar"></i> <span>Takvim</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">26</small>
@@ -153,7 +153,7 @@
           </a>
         </li>
         <li class="treeview active">
-          <a href="mailbox.html">
+          <a href="mailbox.php">
             <i class="fa fa-envelope"></i> <span>Posta Kutusu   </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -161,14 +161,14 @@
           </a>
           <ul class="treeview-menu">
             <li class="active">
-              <a href="mailbox.html">Gelen Kutusu
+              <a href="mailbox.php">Gelen Kutusu
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">13</span>
                 </span>
               </a>
             </li>
-            <li><a href="compose.html">Oluştur</a></li>
-            <li><a href="read-mail.html">Oku</a></li>
+            <li><a href="compose.php">Oluştur</a></li>
+            <li><a href="read-mail.php">Oku</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -178,16 +178,6 @@
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
-          <ul class="treeview-menu">
-            <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Fatura</a></li>
-            <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profil</a></li>
-            <li><a href="../examples/login.html"><i class="fa fa-circle-o"></i> Giriş</a></li>
-            <li><a href="../examples/register.html"><i class="fa fa-circle-o"></i> Kaydol</a></li>
-            <li><a href="../examples/404.html"><i class="fa fa-circle-o"></i> 404 Hata</a></li>
-            <li><a href="../examples/500.html"><i class="fa fa-circle-o"></i> 500 Hata</a></li>
-            <li><a href="../examples/blank.html"><i class="fa fa-circle-o"></i> Boş Sayfa</a></li>
-            <li><a href="../examples/pace.html"><i class="fa fa-circle-o"></i> Pace Sayfa</a></li>
-          </ul>
         </li>
         <li class="header">İletişim</li>
         <li><a href="https://www.instagram.com/bekirff/?hl=tr" target="_Blank"><i class="fa fa-circle-o text-red"></i> <span>İnstagram</span></a></li>
@@ -210,7 +200,7 @@
     <section class="content">
       <div class="row">
         <div class="col-md-3">
-          <a href="mailbox.html" class="btn btn-primary btn-block margin-bottom">
+          <a href="mailbox.php" class="btn btn-primary btn-block margin-bottom">
             Gelen kutusuna geri dön</a>
           <div class="box box-solid">
             <div class="box-header with-border">
@@ -222,7 +212,7 @@
             </div>
             <div class="box-body no-padding">
               <ul class="nav nav-pills nav-stacked">
-                <li><a href="mailbox.html"><i class="fa fa-inbox"></i>Gelen Kutusu
+                <li><a href="mailbox.php"><i class="fa fa-inbox"></i>Gelen Kutusu
                   <span class="label label-primary pull-right">12</span></a></li>
                 <li><a href="#"><i class="fa fa-envelope-o"></i> Gönder</a></li>
                 <li><a href="#"><i class="fa fa-file-text-o"></i> Taslaklar</a></li>

@@ -189,7 +189,6 @@
       <div class="row">
         <div class="col-md-3">
           <a href="compose.php" class="btn btn-primary btn-block margin-bottom">Oluştur</a>
-
           <div class="box box-solid">
             <div class="box-header with-border">
               <h3 class="box-title">Seçenekler</h3>
