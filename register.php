@@ -16,11 +16,6 @@ require_once ("s.php");
       <link rel="stylesheet" href="cssc/style.css">
 </head>
 <body>
-<?php
-include ("s.php");
-?>
-</body>
-<body>
   <body ng-controller="RegisterCtrl" ng-app="myApp">
   <?php
      if ($_POST)
