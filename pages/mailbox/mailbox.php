@@ -17,7 +17,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <header class="main-header">
-    <a href="index.html" class="logo">
+    <a href="index.php" class="logo">
       <span class="logo-mini"><b>A</b>S</span>
       <span class="logo-lg"><b>Ana</b>SAYFA</span>
     </a>
@@ -79,10 +79,10 @@
               </li>
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="giris.html" class="btn btn-default btn-flat" >Giriş Yap</a>
+                  <a href="giris.php" class="btn btn-default btn-flat" >Giriş Yap</a>
                 </div>
                 <div class="pull-right">
-                  <a href="giris.html" class="btn btn-default btn-flat">Oturum Kapat</a>
+                  <a href="giris.php" class="btn btn-default btn-flat">Oturum Kapat</a>
                 </div>
               </li>
             </ul>
@@ -124,7 +124,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.html"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
+            <li><a href="index.php"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
           </ul>
         </li>
         <li class="treeview">
@@ -136,11 +136,11 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="C:\Users\pelbe\Desktop\hi\pages/layout/uye.html"><i class="fa fa-circle-o"></i>Üyeler</a></li>
+            <li><a href="C:\Users\pelbe\Desktop\hi\pages/layout/uye.php"><i class="fa fa-circle-o"></i>Üyeler</a></li>
           </ul>
         </li>
         <li>
-          <a href="../calendar.html">
+          <a href="../calendar.php">
             <i class="fa fa-calendar"></i> <span>Takvim</span>
             <span class="pull-right-container">
               <small class="label pull-right bg-red">26</small>
@@ -149,7 +149,7 @@
           </a>
         </li>
         <li class="treeview active">
-          <a href="mailbox.html">
+          <a href="mailbox.php">
             <i class="fa fa-envelope"></i> <span>Posta Kutusu   </span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -157,7 +157,7 @@
           </a>
           <ul class="treeview-menu">
             <li class="active">
-              <a href="mailbox.html">Gelen Kutusu
+              <a href="mailbox.php">Gelen Kutusu
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">13</span>
                 </span>
@@ -289,7 +289,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"></td>
@@ -298,7 +298,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
@@ -307,7 +307,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
@@ -316,7 +316,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
@@ -325,7 +325,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> -Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"></td>
@@ -334,7 +334,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"></td>
@@ -343,7 +343,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"></td>
@@ -352,7 +352,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
@@ -361,7 +361,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"></td>
@@ -370,7 +370,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star-o text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
@@ -379,7 +379,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
@@ -388,7 +388,7 @@
                   <tr>
                     <td><input type="checkbox"></td>
                     <td class="mailbox-star"><a href="#"><i class="fa fa-star text-yellow"></i></a></td>
-                    <td class="mailbox-name"><a href="read-mail.html">Bekir Uyar</a></td>
+                    <td class="mailbox-name"><a href="read-mail.php">Bekir Uyar</a></td>
                     <td class="mailbox-subject"><b>Yönetim 2.0 Konu</b> - Bu soruna bir çözüm bulmaya çalışıyorum...
                     </td>
                     <td class="mailbox-attachment"><i class="fa fa-paperclip"></i></td>
