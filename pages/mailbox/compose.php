@@ -128,7 +128,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.php"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
+            <li><a href="hi\index.php"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
           </ul>
         </li>
         <li class="treeview">
