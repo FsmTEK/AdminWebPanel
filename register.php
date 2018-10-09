@@ -1,7 +1,6 @@
 <?php
 include ("s.php");
 ?>
-sa
 <!DOCTYPE html>
 <html lang="en">
 <head>
