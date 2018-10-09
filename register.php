@@ -43,10 +43,10 @@
               </div>
               <p class="alert alert-danger" ng-show="form-register.password.$error.minlength || form.password.$invalid">Your password must be at least 6 characters.</p>
               <div class="space-top text-center">
-               <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done" type="submit" values="gönder">
+               <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done" >
                <i class="material-icons left">done</i> Done
                </button>
-               <button type="submit" class="waves-effect waves-light btn cancel">
+               <button type="cancel" class="waves-effect waves-light btn cancel">
                <i class="material-icons left">clear</i>Cancel
                </button>
               </div>
