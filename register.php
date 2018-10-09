@@ -17,27 +17,7 @@ require_once ("s.php");
 </head>
 <body>
   <body ng-controller="RegisterCtrl" ng-app="myApp">
-  <?php
-     if ($_POST)
-     {
-         $adi = $_POST["adi"];
-         $soyadi = $_POST["soyadi"];
-         $Eposta = $_POST["Eposta"];
-         $sifre = $_POST["sifre"];
-         if(empty($adi) || empty($soyadi)|| empty($Eposta)|| empty($sifre))
-         {
-             echo "Boş alan bırakmayınız!";
-         }else{
-             $ekle = $db->exec("insert into icerikler(adi,soyadi,Eposta,sifre) values('$baslik','$icerik','$Eposta','$sifre')");
-             if($ekle)
-             {
-                 echo "Ekleme işlemi başarılı";
-             }else{
-                 echo "Ekleme işlemi başarısız";
-             }
-         }
-     }else{
-    ?>
+
  <div class="container">
    <div id="signup">
       <div class="signup-screen">
@@ -76,7 +56,7 @@ require_once ("s.php");
            </div>
         </div>
     </div>
-     <?php } ?>
+
 </body>
   <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js'></script>
