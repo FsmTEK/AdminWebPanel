@@ -1,6 +1,7 @@
 <?php
 require_once ("s.php");
 ?>
+s
 <!DOCTYPE html>
 <html lang="tr" >
 <head>
