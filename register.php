@@ -1,5 +1,5 @@
 <?php
-requıre_once ("s.php");
+include ("s.php");
 ?>
 
 <!DOCTYPE html>
