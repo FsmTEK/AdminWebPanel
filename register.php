@@ -1,6 +1,4 @@
-<?php
-require_once ("s.php");
-?>
+
 <!DOCTYPE html>
 <html lang="tr" >
 <head>
