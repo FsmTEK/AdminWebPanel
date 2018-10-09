@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Simple Register Form with AngularJS & Material Design</title>
@@ -34,10 +34,13 @@
                 </div>
                 <p class="alert alert-danger" ng-show="form-register.email.$error.email">Your email is invalid.</p>
                 <div class="input-field col s6">
-                    <input id="password" type="password" name="password" ng-model="password" ng-minlength='6' class="validate" required>
+                    <input id="password" type="password" name="password" ng-model="password" ng-minlength='6'
+                           class="validate" required>
                     <label for="password">Password</label>
                 </div>
-                <p class="alert alert-danger" ng-show="form-register.password.$error.minlength || form.password.$invalid">Your password must be at least 6 characters.</p>
+                <p class="alert alert-danger"
+                   ng-show="form-register.password.$error.minlength || form.password.$invalid">Your password must be at
+                    least 6 characters.</p>
                 <div class="space-top text-center">
                     <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
                         <i class="material-icons left">done</i> Done
@@ -54,7 +57,7 @@
 <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js'></script>
-<script  src="jsj/index.js"></script>
+<script src="jsj/index.js"></script>
 </body>
 
 </html>
