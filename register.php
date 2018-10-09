@@ -1,7 +1,7 @@
 <?php
 include ("s.php");
 ?>
-
+sa
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,8 +75,7 @@ if ($_POST)
                    ng-show="form-register.password.$error.minlength || form.password.$invalid">Your password must be at
                     least 6 characters.</p>
                 <div class="space-top text-center">
-                    <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done"/>
-                        <i class="material-icons left">done</i> Done
+                  <input type="submit" value="gönder"/>
                     </button>
                     <button type="button" class="waves-effect waves-light btn cancel"/>
                         <i class="material-icons left">clear</i>Cancel
