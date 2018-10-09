@@ -1,3 +1,7 @@
+<?php
+requıre_one ("s.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
