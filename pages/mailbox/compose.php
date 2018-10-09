@@ -17,13 +17,9 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-
   <header class="main-header">
-   
     <a href="../../index  .html" class="logo">
-  
       <span class="logo-mini"><b>A</b>S</span>
-     
       <span class="logo-lg"><b>Ana</b>SAYFA</span>
     </a>
     <nav class="navbar navbar-static-top">
@@ -32,7 +28,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">  
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -132,7 +127,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
+            <li><a href="index.html"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
           </ul>
         </li>
         <li class="treeview">
