@@ -1,15 +1,3 @@
-<?php
-$dsn = 'mysql:dbname=site;host=localhost';
-$user = 'root';
-$password = '';
-
-try {
-    $db = new PDO($dsn, $user, $password);
-} catch (PDOException $e) {
-    echo 'Bağlantı Sağlanılamadı.: ' . $e->getMessage();
-}
-?>
-
 <html>
 <head>
     <meta charset="utf-8">
@@ -29,7 +17,6 @@ try {
     <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
     <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-
 </head>
 <body class="hold-transition skin-Fsidebar-mini">
 <div class="wrapper">
@@ -76,7 +63,6 @@ try {
                             <span class="hidden-xs">Bekir Uyar</span>
                         </a>
                         <ul class="dropdown-menu">
-
                             <li class="user-header">
                                 <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
                                 <p>
@@ -84,7 +70,6 @@ try {
                                     <small>En Başından beri üye. 2000</small>
                                 </p>
                             </li>
-
                             <li class="user-footer">
                                 <div class="pull-left">
                                     <a href="giris.php" class="btn btn-default btn-flat">Giriş Yap</a>
@@ -100,11 +85,8 @@ try {
             </div>
         </nav>
     </header>
-
     <aside class="main-sidebar">
-
         <section class="sidebar">
-
             <div class="user-panel">
                 <div class="pull-left image">
                     <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
@@ -114,7 +96,6 @@ try {
                     <a href="#"><i class="fa fa-circle text-success"></i>Yönetici</a>
                 </div>
             </div>
-
             <form action="#" method="get" class="sidebar-form">
                 <div class="input-group">
                     <input type="text" name="q" class="form-control" placeholder="Arama...">
@@ -124,7 +105,6 @@ try {
               </span>
                 </div>
             </form>
-
             <ul class="sidebar-menu">
                 <li class="header">Panel</li>
                 <li class="active treeview">
@@ -138,22 +118,18 @@ try {
                         <li><a href="index.php"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
                     </ul>
                 </li>
-
-
                 </li>
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-files-o"></i>
                         <span>Üye Paneli</span>
                         <span class="pull-right-container">
-            
             </span>
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="pages/layout/uye.php"><i class="fa fa-circle-o"></i>Üyeler</a></li>
                     </ul>
                 </li>
-
                 <li>
                     <a href="pages/mailbox/mailbox.php">
                         <i class="fa fa-envelope"></i> <span>Gelen Kutusu </span>
@@ -165,7 +141,6 @@ try {
                     </a>
                 </li>
                 <li class="treeview">
-
                 <li class="header">İletişim</li>
                 <li><a href="https://www.instagram.com/bekirff/?hl=tr" target="_Blank"><i
                                 class="fa fa-circle-o text-red"></i> <span>İnstagram</span></a></li>
@@ -182,10 +157,8 @@ try {
                 Ana Sayfa
                 <small></small>
             </h1>
-
         </section>
         <div class="image-container">
-
         </div>
         <div class="title-container">
             <h1>Teknoloji tasarımlı<br/> web sitemize <br/> HOŞGELDİNİZ</h1>
@@ -195,13 +168,11 @@ try {
         <div class="rectangle3"></div>
         <div class="rectangle2"></div>
         <div class="rectangle1"></div>
-
         <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <script src="jss/index.js"></script>
         <div class="control-sidebar-bg"></div>
     </div>
-
     <script>
         $.widget.bridge('uibutton', $.ui.button);
     </script>
@@ -209,28 +180,17 @@ try {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="plugins/morris/morris.min.js"></script>
     <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
-
     <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
     <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-
     <script src="plugins/knob/jquery.knob.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
     <script src="plugins/daterangepicker/daterangepicker.js"></script>
-
     <script src="plugins/datepicker/bootstrap-datepicker.js"></script>
-
     <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
-
     <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
-
     <script src="plugins/fastclick/fastclick.js"></script>
-
     <script src="dist/js/app.min.js"></script>
-
     <script src="dist/js/pages/dashboard.js"></script>
-
     <script src="dist/js/demo.js"></script>
 </body>
-
 </html>

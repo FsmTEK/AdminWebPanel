@@ -1,7 +1,8 @@
+<?php
+require_once ("s.php");
+?>
 <!DOCTYPE html>
-
 <html lang="tr" >
-
 <head>
   <meta charset="UTF-8">
   <title>Simple Register Form with AngularJS & Material Design</title>
@@ -13,8 +14,6 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
 
       <link rel="stylesheet" href="cssc/style.css">
-
-  
 </head>
 <body>
 <?php
@@ -22,8 +21,6 @@ include ("s.php");
 ?>
 </body>
 <body>
-
-
   <body ng-controller="RegisterCtrl" ng-app="myApp">
   <?php
      if ($_POST)
@@ -32,23 +29,18 @@ include ("s.php");
          $soyadi = $_POST["soyadi"];
          $Eposta = $_POST["Eposta"];
          $sifre = $_POST["sifre"];
-         
          if(empty($adi) || empty($soyadi)|| empty($Eposta)|| empty($sifre))
          {
              echo "Boş alan bırakmayınız!";
-
          }else{
              $ekle = $db->exec("insert into icerikler(adi,soyadi,Eposta,sifre) values('$baslik','$icerik','$Eposta','$sifre')");
-
              if($ekle)
              {
                  echo "Ekleme işlemi başarılı";
-
              }else{
                  echo "Ekleme işlemi başarısız";
              }
          }
-
      }else{
     ?>
  <div class="container">
