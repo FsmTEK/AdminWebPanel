@@ -18,7 +18,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <header class="main-header">
-    <a href="../../index.php" class="logo">
+    <a href="hi/index.php" class="logo">
       <span class="logo-mini"><b>A</b>S</span>
       <span class="logo-lg"><b>Ana</b>SAYFA</span>
     </a>
