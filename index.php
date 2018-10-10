@@ -7,31 +7,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   
     
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/faa/style.css">
+  <link rel="stylesheet" href="faa/style.css">
   
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
  
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
  
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
  
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/plugins/iCheck/flat/blue.css">
+  <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
 
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/plugins/morris/morris.css">
+  <link rel="stylesheet" href="plugins/morris/morris.css">
   
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/plugins/jvectormap/jquery-jvectormap-1.2.2.css">
+  <link rel="stylesheet" href="plugins/jvectormap/jquery-jvectormap-1.2.2.css">
   
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/plugins/datepicker/datepicker3.css">
+  <link rel="stylesheet" href="plugins/datepicker/datepicker3.css">
  
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
   
-  <link rel="stylesheet" href="../../../Users/pelbe/Desktop/his/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
     </head>
     <body class="hold-transition skin-Fsidebar-mini">
@@ -75,13 +75,13 @@
           </li>
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-               <img src="../../../Users/pelbe/Desktop/his/dist/img/avatar5.png" class="user-image" alt="User Image">
+               <img src="dist/img/avatar5.png" class="user-image" alt="User Image">
                <span class="hidden-xs">Bekir Uyar</span>
           </a>
                <ul class="dropdown-menu">
             
                      <li class="user-header">
-                      <img src="../../../Users/pelbe/Desktop/his/dist/img/avatar5.png" class="img-circle" alt="User Image">
+                      <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
                 <p>
                   Bekir Uyar - Teknoloji Admini
                   <small>En Başından beri üye. 2000</small>
@@ -90,7 +90,7 @@
              
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="giris.html" class="btn btn-default btn-flat" >Giriş Yap</a>
+                  <a href="giris.php" class="btn btn-default btn-flat" >Giriş Yap</a>
                 </div>
                 <div class="pull-right">
                   <a href="register.html" class="btn btn-default btn-flat">Kayıt Ol</a>
@@ -110,7 +110,7 @@
      
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../../Users/pelbe/Desktop/his/dist/img/avatar5.png" class="img-circle" alt="User Image">
+          <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Bekir Uyar</p>
@@ -158,7 +158,7 @@
         </li>
       
         <li>
-          <a href="../../../Users/pelbe/Desktop/his/pages/mailbox/mailbox.html">
+          <a href="pages/mailbox/mailbox.html">
             <i class="fa fa-envelope"></i> <span>Gelen Kutusu </span>
             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
@@ -199,12 +199,12 @@
 
   
 
-    <script  src="../../../Users/pelbe/Desktop/his/jss/index.js"></script>
+    <script  src="jss/index.js"></script>
 
   <div class="control-sidebar-bg"></div>
 </div>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
@@ -212,34 +212,34 @@
   $.widget.bridge('uibutton', $.ui.button);
 </script>
 
-<script src="../../../Users/pelbe/Desktop/his/bootstrap/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="../../../Users/pelbe/Desktop/his/plugins/morris/morris.min.js"></script>
+<script src="plugins/morris/morris.min.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script src="plugins/sparkline/jquery.sparkline.min.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-<script src="../../../Users/pelbe/Desktop/his/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/knob/jquery.knob.js"></script>
+<script src="plugins/knob/jquery.knob.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<script src="../../../Users/pelbe/Desktop/his/plugins/daterangepicker/daterangepicker.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/datepicker/bootstrap-datepicker.js"></script>
+<script src="plugins/datepicker/bootstrap-datepicker.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/plugins/fastclick/fastclick.js"></script>
+<script src="plugins/fastclick/fastclick.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/dist/js/app.min.js"></script>
+<script src="dist/js/app.min.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/dist/js/pages/dashboard.js"></script>
+<script src="dist/js/pages/dashboard.js"></script>
 
-<script src="../../../Users/pelbe/Desktop/his/dist/js/demo.js"></script>
+<script src="dist/js/demo.js"></script>
 </body>
 
 </html>
