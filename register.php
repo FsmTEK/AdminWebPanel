@@ -31,10 +31,12 @@ if ($_POST)
         }
     }
 }else
+
+
 ?>
 <div class="wrapper">
     <form class="form-signin" method="post">
-        <h2 class="form-signin-heading">Please register</h2>
+        <h2 class="form-signin-heading">Kayıt olunuz</h2>
         <input type="text" class="form-control" name="kadi" placeholder="Kullanıcı adı" required="" autofocus=""/>
         <input type="password" class="form-control" name="password" placeholder="Şifre" required=""/>
         <label class="checkbox">

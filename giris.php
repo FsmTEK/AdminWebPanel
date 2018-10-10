@@ -15,7 +15,6 @@ if(isset($_GET['logout'])){
     session_destroy();
     header('Refresh:2; url=/webadmin/giris.php');
 }
-
 if ($_POST)
 {
     $kadi = $_POST["kadi"];
@@ -33,13 +32,12 @@ if ($_POST)
         } else {
             echo 'Giriş Başarısız';
         }
-
     }
 }else
 ?>
 <div class="wrapper">
     <form class="form-signin" method="post">
-        <h2 class="form-signin-heading">Please login</h2>
+        <h2 class="form-signin-heading">Giriş Yapınız</h2>
         <input type="text" class="form-control" name="kadi" placeholder="Kullanıcı adı" required="" autofocus=""/>
         <input type="password" class="form-control" name="password" placeholder="Şifre" required=""/>
         <label class="checkbox">

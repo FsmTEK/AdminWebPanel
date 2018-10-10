@@ -1,8 +1,8 @@
 <?php
 require_once('config.php');
-if(!isset($_SESSION['kadi'])){
+if (!isset($_SESSION['kadi'])) {
     header('Refresh:2; url=/webadmin/giris.php');
-}else {
+} else {
     ?>
     <html>
     <head>
@@ -70,7 +70,6 @@ if(!isset($_SESSION['kadi'])){
                                 <span class="hidden-xs">Bekir Uyar</span>
                             </a>
                             <ul class="dropdown-menu">
-
                                 <li class="user-header">
                                     <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
                                     <p>
@@ -78,7 +77,6 @@ if(!isset($_SESSION['kadi'])){
                                         <small>En Başından beri üye. 2000</small>
                                     </p>
                                 </li>
-
                                 <li class="user-footer">
                                     <div class="pull-left">
                                         <a href="giris.php" class="btn btn-default btn-flat">Giriş Yap</a>
@@ -94,11 +92,8 @@ if(!isset($_SESSION['kadi'])){
                 </div>
             </nav>
         </header>
-
         <aside class="main-sidebar">
-
             <section class="sidebar">
-
                 <div class="user-panel">
                     <div class="pull-left image">
                         <img src="dist/img/avatar5.png" class="img-circle" alt="User Image">
@@ -108,7 +103,6 @@ if(!isset($_SESSION['kadi'])){
                         <a href="#"><i class="fa fa-circle text-success"></i>Yönetici</a>
                     </div>
                 </div>
-
                 <form action="#" method="get" class="sidebar-form">
                     <div class="input-group">
                         <input type="text" name="q" class="form-control" placeholder="Arama...">
@@ -118,7 +112,6 @@ if(!isset($_SESSION['kadi'])){
               </span>
                     </div>
                 </form>
-
                 <ul class="sidebar-menu">
                     <li class="header">Panel</li>
                     <li class="active treeview">
@@ -129,23 +122,19 @@ if(!isset($_SESSION['kadi'])){
             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="index.html"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
+                            <li><a href="index.php"><i class="fa fa-circle-o"></i>Ana Sayfa</a></li>
                         </ul>
                     </li>
                     </li>
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-files-o"></i>
-                            <span>Üye Paneli</span>
-                            <span class="pull-right-container">
-            </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/layout/uye.html"><i class="fa fa-circle-o"></i>Üyeler</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="pages/mailbox/mailbox.html">
+                        <a href="pages/mailbox/mailbox.php">
                             <i class="fa fa-envelope"></i> <span>Gelen Kutusu </span>
                             <span class="pull-right-container">
               <small class="label pull-right bg-yellow">12</small>
@@ -173,7 +162,6 @@ if(!isset($_SESSION['kadi'])){
                 </h1>
             </section>
             <div class="image-container">
-
             </div>
             <div class="title-container">
                 <h1>Teknoloji tasarımlı<br/> web sitemize <br/> HOŞGELDİNİZ</h1>
