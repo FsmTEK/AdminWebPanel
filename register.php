@@ -25,11 +25,10 @@ if ($_POST)
             $_SESSION["kadi"] = $kadi;
             $_SESSION["password"] = $password;
             header("Refresh:2;url=/webadmin/");
-            echo 'Giriş Yapıldı';
+            echo 'Kayıt Başarılı';
         } else {
-            echo 'Giriş Başarısız';
+            echo 'Kayıt Başarısız';
         }
-
     }
 }else
 ?>
@@ -41,7 +40,7 @@ if ($_POST)
         <label class="checkbox">
             <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Beni hatırla
         </label>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş yap</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Kayıt ol</button>
     </form>
 </div>
 </body>
