@@ -90,10 +90,10 @@
              
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="giris.html" class="btn btn-default btn-flat" >Giriş Yap</a>
+                  <a href="giris.php" class="btn btn-default btn-flat" >Giriş Yap</a>
                 </div>
                 <div class="pull-right">
-                  <a href="register.html" class="btn btn-default btn-flat">Kayıt Ol</a>
+                  <a href="register.php" class="btn btn-default btn-flat">Kayıt Ol</a>
                 </div>
               </li>
             </ul>
