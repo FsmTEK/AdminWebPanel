@@ -27,8 +27,7 @@ if(empty($password) || empty($kadi))
 {
 echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
 } else {
-$sql= $db->prepare("SELECT * FROM uye WHERE kadi='$kadi' AND sifre='$password'");
-$query = $db->query("SELECT * FROM uye WHERE kadi='{$kadi}' AND sifre='{$password}'")->fetch(PDO::FETCH_ASSOC); <!-- Bilgi Çekme -->
+$query = $db->query("SELECT * FROM uye WHERE kadi='{$kadi}' AND sifre='{$password}'")->fetch(PDO::FETCH_ASSOC);
 $sql -> execute();
 if($sql -> rowCount()){
 $_SESSION["oturum"]=TRUE;
