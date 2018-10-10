@@ -1,5 +1,5 @@
 <?php
-include ("s.php");
+require_once ("s.php");
 ?>
 
 <!DOCTYPE html>
@@ -18,12 +18,36 @@ include ("s.php");
 </head>
 
 <body>
-
+<?php
+if($_POST["girisyap"])
+{
+$kadi=$_POST["kadi"];
+$password=$_POST['password'];
+if(empty($password) or empty($kadi))
+{
+echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
+}
+else
+{
+$sql= $db->prepare("SELECT * FROM uyeler WHERE kadi='$kadi' AND sifre='$password'");
+$query = $db->query("SELECT * FROM uyeler WHERE kadi='{$kadi}' AND sifre='{$password}'")->fetch(PDO::FETCH_ASSOC); <!-- Bilgi Çekme -->
+$sql -> execute();
+if($sql -> rowCount()){
+$_SESSION["oturum"]=TRUE;
+$_SESSION["id"]=$query["id"];
+$_SESSION["kadi"]=$query["kadi"];
+header("Refresh:2;url=index.php");
+echo 'Giriş Yapıldı';
+}
+else {echo 'Giriş Başarısız';}
+}
+}else {echo 'Formu Doldurunuz';}
+?>
     <div class="wrapper">
     <form class="form-signin">       
       <h2 class="form-signin-heading">Please login</h2>
-      <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+      <input type="text" class="form-control" name="username" placeholder="Kullanıcı adı" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" placeholder="Şifre" required=""/>
       <label class="checkbox">
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
       </label>
