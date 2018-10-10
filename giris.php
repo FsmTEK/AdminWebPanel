@@ -26,7 +26,6 @@ if ($_POST)
     if (empty($kadi) || empty($passaword)) {
         echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
     } else {
-        $sql= $db->prepare("SELECT * FROM uye WHERE kadi='$kadi' AND sifre='$password'");
         $query = $db->query("SELECT * FROM uye WHERE uye_id = '{$id}' AND sifre='{$password}'")->fetch(PDO::FETCH_ASSOC);
 $debug=$sql->execute();
 print_r($debug);
