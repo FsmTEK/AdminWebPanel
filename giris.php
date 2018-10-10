@@ -30,7 +30,7 @@ if ($_POST)
         if ($query) {
             print_r($query);
         }
-        if ($sql->rowCount()) {
+        if ($query->rowCount()) {
             $_SESSION["oturum"] = TRUE;
             $_SESSION["kadi"] = $query["kadi"];
             $_SESSION["passaword"] = $query["passaword"];
