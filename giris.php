@@ -22,12 +22,12 @@ include ("s.php");
 if($_POST)
 {
 $kadi =$_POST["kadi"];
-$password =$_POST['password'];
+$password =$_POST['passaword'];
 if(empty($password) || empty($kadi))
 {
 echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
 } else {
-$query = $db->query("SELECT * FROM uye WHERE kadi='{$kadi}' AND sifre='{$password}'")->fetch(PDO::FETCH_ASSOC);
+$query = $db->query("SELECT * FROM uye WHERE kadi='{$kadi}' AND sifre='{$passaword}'")->fetch(PDO::FETCH_ASSOC);
 $sql -> execute();
 if($sql -> rowCount()){
 $_SESSION["oturum"]=TRUE;
