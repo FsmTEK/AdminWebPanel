@@ -18,29 +18,24 @@ include("s.php");
 </head>
 
 <body>
-<?php
-if ($_POST)
+<?Php
+$_kadi = "bekirff";
+$_passaword = "147896325";
+
+$DB = new DB_Class(); // DB_Class Başlatıyorum.
+$arr = array("parametre_1"=>$_isimsoyisim,"parametre_2"=>$_dogumyili);
+$Query = $DB->select("*", "uye", "WHERE kadi=:parametre_1 and passaword=:parametre_2", $arr);
+
+
+&nbsp;
+
+if ($Query != null)
+foreach ($Query as $Data)
 {
-    $kadi = $_POST["kadi"];
-    $passaword = $_POST['passaword'];
-    if (empty($kadi) || empty($passaword)) {
-        echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
-    } else {
-        $query = $db->query("SELECT * FROM uye WHERE kadi='$kadi' AND sifre='$passaword'")->fetch(PDO::FETCH_ASSOC);
-if ($query){
-    print_r($query);
+
+echo $Data[kadi]. " - " .$Data[passaword];
+
 }
-if ($sql->rowCount()) {
-    $_SESSION["oturum"] = TRUE;
-    $_SESSION["kadi"] = $query["kadi"];
-    $_SESSION["passaword"] = $query["passaword"];
-    header("Refresh:2;url=index.php");
-    echo 'Giriş Yapıldı';
-} else {
-    echo 'Giriş Başarısız';
-}
-}
-}else
 ?>
 <div class="wrapper">
     <form class="form-signin" method="post">
