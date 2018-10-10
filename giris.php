@@ -30,8 +30,8 @@ $query = $db->query("SELECT * FROM uye WHERE kadi='{$kadi}' AND sifre='{$passawo
 $sql->execute();
 if ($sql->rowCount()) {
     $_SESSION["oturum"] = TRUE;
-    $_SESSION["id"] = $query["kadi"];
-    $_SESSION["kadi"] = $query["passaword"];
+    $_SESSION["kadi"] = $query["kadi"];
+    $_SESSION["passaword"] = $query["passaword"];
     header("Refresh:2;url=index.php");
     echo 'Giriş Yapıldı';
 } else {
