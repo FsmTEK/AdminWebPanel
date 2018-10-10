@@ -19,7 +19,7 @@ require_once ("s.php");
 
 <body>
 <?php
-if($_POST["girisyap"])
+if($_POST)
 {
 $kadi=$_POST["kadi"];
 $password=$_POST['password'];
@@ -42,7 +42,11 @@ echo 'Giriş Yapıldı';
 else {echo 'Giriş Başarısız';}
 }
 }else {echo 'Formu Doldurunuz';}
+{  else
+
+
 ?>
+
     <div class="wrapper">
     <form class="form-signin">       
       <h2 class="form-signin-heading">Please login</h2>
@@ -53,6 +57,7 @@ else {echo 'Giriş Başarısız';}
       </label>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
     </form>
+        <?php } ?>
   </div>
   
   
