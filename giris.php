@@ -22,7 +22,7 @@ include("s.php");
 $_kadi = "bekirff";
 $_passaword = "147896325";
 
-$DB = new DB_Class(); // DB_Class Başlatıyorum.
+$DB = new DB_Class();
 $arr = array("parametre_1"=>$_isimsoyisim,"parametre_2"=>$_dogumyili);
 $Query = $DB->select("*", "uye", "WHERE kadi=:parametre_1 and passaword=:parametre_2", $arr);
 if ($Query != null)
