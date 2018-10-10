@@ -39,6 +39,7 @@ echo 'Giriş Yapıldı';
 else {echo 'Giriş Başarısız';}
 }
 }else
+{ else
 ?>
     <div class="wrapper">
     <form class="form-signin">       
@@ -46,11 +47,11 @@ else {echo 'Giriş Başarısız';}
       <input type="text" class="form-control" name="username" placeholder="Kullanıcı adı" required="" autofocus="" />
       <input type="password" class="form-control" name="password" placeholder="Şifre" required=""/>
       <label class="checkbox">
-        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Beni hatırla
       </label>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
     </form>
-
+<?php } ?>
   </div>
   
   
