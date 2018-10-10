@@ -22,8 +22,8 @@ include ("s.php");
 if($_POST)
 {
 $kadi =$_POST["kadi"];
-$password =$_POST['passaword'];
-if(empty($password) || empty($kadi))
+$passaword =$_POST['passaword'];
+if(empty($kadi) || empty($passaword))
 {
 echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
 } else {
@@ -31,8 +31,8 @@ $query = $db->query("SELECT * FROM uye WHERE kadi='{$kadi}' AND sifre='{$passawo
 $sql -> execute();
 if($sql -> rowCount()){
 $_SESSION["oturum"]=TRUE;
-$_SESSION["id"]=$query["id"];
-$_SESSION["kadi"]=$query["kadi"];
+$_SESSION["id"]=$query["kadi"];
+$_SESSION["kadi"]=$query["passaword"];
 header("Refresh:2;url=index.php");
 echo 'Giriş Yapıldı';
 }
