@@ -1,5 +1,5 @@
 <?php
-include("s.php");
+require_once('config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,21 +11,23 @@ include("s.php");
 </head>
 <body>
 <?php
+if(isset($_GET['logout'])){
+    session_destroy();
+    header('Refresh:2; url=/webadmin/giris.php');
+}
+
 if ($_POST)
 {
     $kadi = $_POST["kadi"];
-    $passaword = $_POST['passaword'];
-    if (empty($kadi) || empty($passaword)) {
+    $password = $_POST['password'];
+    if (empty($kadi) || empty($password)) {
         echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
     } else {
-        $query = $db->query("SELECT * FROM uye WHERE kadi='$kadi' AND sifre='$passaword'")->fetch(PDO::FETCH_ASSOC);
-        if ($query) {
-            print_r($query);
-        }
+        $query = $db->query("SELECT * FROM uye WHERE kadi='$kadi' AND sifre='$password'")->fetch(PDO::FETCH_ASSOC);
         if (!empty($query)) {
             $_SESSION["oturum"] = TRUE;
-            $_SESSION["kadi"] = $query["kadi"];
-            $_SESSION["passaword"] = $query["passaword"];
+            $_SESSION["kadi"] = $kadi;
+            $_SESSION["passaword"] = $password;
             header("Refresh:2;url=index.php");
             echo 'Giriş Yapıldı';
         } else {
@@ -39,7 +41,7 @@ if ($_POST)
     <form class="form-signin" method="post">
         <h2 class="form-signin-heading">Please login</h2>
         <input type="text" class="form-control" name="kadi" placeholder="Kullanıcı adı" required="" autofocus=""/>
-        <input type="password" class="form-control" name="passaword" placeholder="Şifre" required=""/>
+        <input type="password" class="form-control" name="password" placeholder="Şifre" required=""/>
         <label class="checkbox">
             <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Beni hatırla
         </label>

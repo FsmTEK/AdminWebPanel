@@ -1,77 +1,48 @@
 <?php
-include("s.php");
+require_once('config.php');
 ?>
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Simple Register Form with AngularJS & Material Design</title>
-  <meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css'>
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
-
-      <link rel="stylesheet" href="cssc/style.css">
-
-  
+    <meta charset="UTF-8">
+    <title>Bootstrap Snippet: Login Form</title>
+    <link rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="ss/sisi.css">
 </head>
-
 <body>
+<?php
+if ($_POST)
+{
+    $kadi = $_POST["kadi"];
+    $password = $_POST['password'];
+    if (empty($kadi) || empty($password)) {
+        echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
+    } else {
+        $query = $db->prepare("INSERT INTO uye SET kadi = ?, sifre = ?");
+        $insert = $query->execute(array($kadi, $password));
+        if (!empty($insert)) {
+            $_SESSION["oturum"] = TRUE;
+            $_SESSION["kadi"] = $kadi;
+            $_SESSION["password"] = $password;
+            header("Refresh:2;url=/webadmin/");
+            echo 'Giriş Yapıldı';
+        } else {
+            echo 'Giriş Başarısız';
+        }
 
-  <body ng-controller="RegisterCtrl" ng-app="myApp">
- <div class="container">
-   <div id="signup">
-      <div class="signup-screen">
-         <div class="space-bot text-center">
-            <h1>Sign up</h1>
-           <div class="divider"></div>
-         </div>
-           <form class="form-register" method="post" name="register" novalidate>
-	            <div class="input-field col s6">
-              <input id="first-name" type="text" class="validate" required>
-              <label for="first-name">First Name</label>
-            </div>
-            <div class="input-field col s6">
-              <input id="last-name" type="text" class="validate" required>
-              <label for="last-name">Last Name</label>
-             </div>
-             <div class="input-field col s6">
-              <input id="email" type="email" name="email" ng-model="email" class="validate" required>
-              <label for="email">Email</label>
-             </div>
-             <p class="alert alert-danger" ng-show="form-register.email.$error.email">Your email is invalid.</p>
-             <div class="input-field col s6">
-               <input id="password" type="password" name="password" ng-model="password" ng-minlength='6' class="validate" required>
-               <label for="password">Password</label>
-              </div>
-              <p class="alert alert-danger" ng-show="form-register.password.$error.minlength || form.password.$invalid">Your password must be at least 6 characters.</p>
-              <div class="space-top text-center">
-               <button ng-disabled="form-register.$invalid" class="waves-effect waves-light btn done">
-               <i class="material-icons left">done</i> Done
-               </button>
-               <button type="button" class="waves-effect waves-light btn cancel">
-               <i class="material-icons left">clear</i>Cancel
-               </button>
-              </div>
-             </form>
-           </div>
-        </div>
-    </div>
+    }
+}else
+?>
+<div class="wrapper">
+    <form class="form-signin" method="post">
+        <h2 class="form-signin-heading">Please register</h2>
+        <input type="text" class="form-control" name="kadi" placeholder="Kullanıcı adı" required="" autofocus=""/>
+        <input type="password" class="form-control" name="password" placeholder="Şifre" required=""/>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Beni hatırla
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş yap</button>
+    </form>
+</div>
 </body>
-  <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js'></script>
-<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js'></script>
-
-  
-
-    <script  src="jsj/index.js"></script>
-
-
-
-
-</body>
-
 </html>
