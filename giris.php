@@ -25,10 +25,6 @@ $_passaword = "147896325";
 $DB = new DB_Class(); // DB_Class Başlatıyorum.
 $arr = array("parametre_1"=>$_isimsoyisim,"parametre_2"=>$_dogumyili);
 $Query = $DB->select("*", "uye", "WHERE kadi=:parametre_1 and passaword=:parametre_2", $arr);
-
-
-&nbsp;
-
 if ($Query != null)
 foreach ($Query as $Data)
 {
