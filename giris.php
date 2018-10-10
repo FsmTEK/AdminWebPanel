@@ -48,7 +48,7 @@ else {echo 'Giriş Başarısız';}
       <label class="checkbox">
         <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Beni hatırla
       </label>
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Giriş yap</button>
     </form>
   </div>
 </body>
