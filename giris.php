@@ -43,8 +43,8 @@ if ($sql->rowCount()) {
 <div class="wrapper">
     <form class="form-signin" method="post">
         <h2 class="form-signin-heading">Please login</h2>
-        <input type="text" class="form-control" name="username" placeholder="Kullanıcı adı" required="" autofocus=""/>
-        <input type="password" class="form-control" name="password" placeholder="Şifre" required=""/>
+        <input type="text" class="form-control" name="kadi" placeholder="Kullanıcı adı" required="" autofocus=""/>
+        <input type="password" class="form-control" name="passaword" placeholder="Şifre" required=""/>
         <label class="checkbox">
             <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Beni hatırla
         </label>
