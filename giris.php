@@ -21,9 +21,9 @@ require_once ("s.php");
 <?php
 if($_POST)
 {
-$kadi=$_POST["kadi"];
-$password=$_POST['password'];
-if(empty($password) or empty($kadi))
+$kadi =$_POST["kadi"];
+$password =$_POST['password'];
+if(empty($password) || empty($kadi))
 {
 echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
 }
