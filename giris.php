@@ -26,11 +26,9 @@ $password =$_POST['password'];
 if(empty($password) || empty($kadi))
 {
 echo 'Kullanıcı Adınızı & Şifrenizi Boş Bırakmayınız...';
-}
-else
-{
-$sql= $db->prepare("SELECT * FROM uyeler WHERE kadi='$kadi' AND sifre='$password'");
-$query = $db->query("SELECT * FROM uyeler WHERE kadi='{$kadi}' AND sifre='{$password}'")->fetch(PDO::FETCH_ASSOC); <!-- Bilgi Çekme -->
+} else {
+$sql= $db->prepare("SELECT * FROM uye WHERE kadi='$kadi' AND sifre='$password'");
+$query = $db->query("SELECT * FROM uye WHERE kadi='{$kadi}' AND sifre='{$password}'")->fetch(PDO::FETCH_ASSOC); <!-- Bilgi Çekme -->
 $sql -> execute();
 if($sql -> rowCount()){
 $_SESSION["oturum"]=TRUE;
@@ -42,11 +40,7 @@ echo 'Giriş Yapıldı';
 else {echo 'Giriş Başarısız';}
 }
 }else {echo 'Formu Doldurunuz';}
-
-
-
 ?>
-
     <div class="wrapper">
     <form class="form-signin">       
       <h2 class="form-signin-heading">Please login</h2>
