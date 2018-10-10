@@ -1,5 +1,5 @@
 <?php
-require_once ("s.php");
+include ("s.php");
 ?>
 
 <!DOCTYPE html>
@@ -51,9 +51,5 @@ else {echo 'Giriş Başarısız';}
       <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>   
     </form>
   </div>
-  
-  
-
 </body>
-
 </html>
