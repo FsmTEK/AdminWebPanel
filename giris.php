@@ -39,6 +39,7 @@ echo 'Giriş Yapıldı';
 else {echo 'Giriş Başarısız';}
 }
 }else
+?>
     <div class="wrapper">
     <form class="form-signin">       
       <h2 class="form-signin-heading">Please login</h2>
