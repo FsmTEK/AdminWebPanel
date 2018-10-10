@@ -1,22 +1,14 @@
 <?php
 include("s.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap Snippet: Login Form</title>
-
-
     <link rel='stylesheet' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
-
     <link rel="stylesheet" href="ss/sisi.css">
-
-
 </head>
-
 <body>
 <?php
 if ($_POST)
@@ -30,7 +22,7 @@ if ($_POST)
         if ($query) {
             print_r($query);
         }
-        if ($query->rowCount()) {
+        if (!empty($query)) {
             $_SESSION["oturum"] = TRUE;
             $_SESSION["kadi"] = $query["kadi"];
             $_SESSION["passaword"] = $query["passaword"];
@@ -39,6 +31,7 @@ if ($_POST)
         } else {
             echo 'Giriş Başarısız';
         }
+
     }
 }else
 ?>

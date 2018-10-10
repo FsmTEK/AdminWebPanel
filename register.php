@@ -1,3 +1,6 @@
+<?php
+include("s.php");
+?>
 <!DOCTYPE html>
 <html lang="en" >
 
